@@ -24,6 +24,22 @@ make test
 npm test
 ```
 
+What you should see:
+
+```
+> jstestbase@1.0.0 test /home/harry/workspace/jstestbase
+> jasmine
+
+Randomized with seed 77974
+Started
+.
+
+
+1 spec, 0 failures
+Finished in 0.004 seconds
+Randomized with seed 77974 (jasmine --random=true --seed=77974)
+```
+
 ## auto-rerun:
 
 ```sh
