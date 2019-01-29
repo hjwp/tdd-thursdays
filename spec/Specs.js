@@ -1,14 +1,14 @@
-import {thing} from '../lib/index.js'
-import {describe, expect, it} from 'jasmine';
+require('jasmine');
+const ourModule = require('../lib/index.js')
 
 describe("A feature", () => {
   let add;
 
   beforeEach(function() {
-    add = thing.add;
+    add = ourModule.add;
   });
 
   it("should be able to do maths", function() {
-    expect(add(2, 2)).toEqual(3);
+    expect(add(1, 2)).toEqual(3);
   });
 });
