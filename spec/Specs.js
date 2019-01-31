@@ -8,8 +8,11 @@ describe("A feature", () => {
     rover = ourModule.rover;
   });
 
-  it("should start at zero", function() {
+  it("should start at zero and face north", function() {
     expect(rover.x).toEqual(0);
     expect(rover.y).toEqual(0);
+    expect(rover.direction).toEqual('N');
   });
+
+
 });
