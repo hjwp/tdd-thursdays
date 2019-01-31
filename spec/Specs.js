@@ -14,7 +14,7 @@ describe("A feature", () => {
     expect(rover.direction).toEqual('N');
   });
 
-  it("should be able to receive a char array to move", function() {
+  it("should be able to move forward once", function() {
     rover.x = 0;
     rover.y = 0;
     rover.direction = 'N';
@@ -22,6 +22,17 @@ describe("A feature", () => {
     rover.move(char_array);
     expect(rover.x).toEqual(0);
     expect(rover.y).toEqual(1);
+    expect(rover.direction).toEqual('N');
+  });
+
+  it("should be able to move forward twice", function() {
+    rover.x = 0;
+    rover.y = 5;
+    rover.direction = 'N';
+    let char_array = ['f', 'f'];
+    rover.move(char_array);
+    expect(rover.x).toEqual(0);
+    expect(rover.y).toEqual(7);
     expect(rover.direction).toEqual('N');
   });
 
