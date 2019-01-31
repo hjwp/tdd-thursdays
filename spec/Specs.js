@@ -2,13 +2,14 @@ require('jasmine');
 const ourModule = require('../lib/index.js')
 
 describe("A feature", () => {
-  let add;
+  let rover;
 
   beforeEach(function() {
-    add = ourModule.add;
+    rover = ourModule.rover;
   });
 
-  it("should be able to do maths", function() {
-    expect(add(1, 2)).toEqual(3);
+  it("should start at zero", function() {
+    expect(rover.x).toEqual(0);
+    expect(rover.y).toEqual(0);
   });
 });
