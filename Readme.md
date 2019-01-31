@@ -46,6 +46,9 @@ Randomized with seed 77974 (jasmine --random=true --seed=77974)
 make watch-tests
 ```
 
+(you may need to install "entr" with `apt install entr` or `brew install entr`)
+
+
 ## find our files:
 
 * tests live in `spec/Specs.js`
