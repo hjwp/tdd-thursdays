@@ -61,4 +61,10 @@ describe("A feature", () => {
     expect(rover.direction).toEqual('E');
   })
 
+  it("should really really turn left", function() {
+    rover.direction = 'N';
+    rover.move(['l', 'l', 'l', 'l',]);
+    expect(rover.direction).toEqual('N');
+  })
+
 });
