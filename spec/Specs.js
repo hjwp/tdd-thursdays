@@ -36,4 +36,13 @@ describe("A feature", () => {
     expect(rover.direction).toEqual('N');
   });
 
+  it("should move backwards once", function() {
+    rover.x = 0;
+    rover.y = 5;
+    rover.direction = 'N';
+    let char_array = ['b', 'b', 'b'];
+    rover.move(char_array);
+    expect(rover.y).toEqual(2);
+  })
+
 });
